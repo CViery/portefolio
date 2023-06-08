@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:rgba(255, 255,255, 0.2);
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+body{
+    background-color:black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.text-about-me{
+    font-style: italic;
+    font-weight: bolder;
+}
+button{
+    border: none;
+    width: 7em;
+    height: 2em;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-image: url("https://img.freepik.com/vetores-gratis/fluxo-de-design-de-codigo-binario_53876-118589.jpg?w=740&t=st=1686264450~exp=1686265050~hmac=f788a8f451abc7fb990a4b528e18c59baf9a7df23863ceaafa535e72c6b61ce8");
+    background-size: cover;
+}
+.container{
+    padding: 20px;
+    background-color: rgba(255, 255,255, 0.2);
+    color: white;
+    margin: 30px;
+    text-align: center;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color:white;
+    color: black;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.icons{
+    width: 30px;
+}
