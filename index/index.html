@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Portifolio Cviery</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -15,29 +17,49 @@
         </nav>
     </header>
     <main>
-           <section class="container">
-                <article>
+        <section id="test" class="container">
+            <article>
+                <div class="containerCirculo">
                     <h3 id="title-quem-souEu">Quem Sou Eu</h3>
-                    <p class="text-about-me">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente amet excepturi perferendis praesentium, quod id suscipit perspiciatis dicta rerum neque deserunt, fugiat tempore autem delectus commodi culpa optio. Sequi, facilis!</p>
-                </article>
-           </section> 
-            <section class="container">
-                <article>
-                    <h3>Conheça meus Projetos</h3>
-                    <a href=""><button>Confira!</button></a>
-                </article>
-            </section>
+                    <div class="circulo"></div>
+                </div>
+
+                <p class="text-about-me">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente amet
+                    excepturi perferendis praesentium, quod id suscipit perspiciatis dicta rerum neque deserunt, fugiat
+                    tempore autem delectus commodi culpa optio. Sequi, facilis!</p>
+            </article>
+        </section>
+        <section class="container">
+            <article>
+                <h3>Conheça meus Projetos</h3>
+                <a href=""><button class="confira">Confira!</button></a>
+            </article>
+        </section>
 
 
     </main>
     <footer>
-            <h5>Redes sociais</h5>
-            <div>
-                <a href=""><img class="icons" src="../imgs/insta.png" alt=""></a>
-                <a href=""><img class="icons" src="../imgs/likedin.png" alt=""></a>
-                <a href=""><img class="icons" src="../imgs/github.png" alt=""></a>
-            </div>
+        <h5>Redes sociais</h5>
+        <div>
+            <a href=""><img class="icons" src="../imgs/insta.png" alt=""></a>
+            <a href=""><img class="icons" src="../imgs/likedin.png" alt=""></a>
+            <a href=""><img class="icons" src="../imgs/github.png" alt=""></a>
+        </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $('.circulo').hide().show(5000)
+        $(document).mouseleave(()=>{
+            const contato = confirm("Antes de Sair que tal mandar uma mensagem para saber mais ?")
+            if(contato === true){
+                window.open("https://wa.me/5511988453589", "_blank");
+            }else{
+                const contato = confirm("Antes de Sair que tal mandar uma mensagem para saber mais ?")
+            }
+        })
+      
+        
+    </script>
 </body>
+
 </html>
